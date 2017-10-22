@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="用户姓名："
+            android:textColor="#bb333333"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/title_name"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="#ee333333"
+            android:textCursorDrawable="@drawable/edittext_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/edit_name"
+            android:layout_alignRight="@id/edit_name"
+            android:layout_below="@id/edit_name"
+            android:background="#33333333"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/title_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="用户昵称："
+            android:textColor="#bb333333"/>
+
+        <EditText
+            android:id="@+id/edit_nick"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/title_nick"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="#ee333333"
+            android:textCursorDrawable="@drawable/edittext_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/title_nick"
+            android:layout_alignRight="@id/title_nick"
+            android:layout_below="@id/title_nick"
+            android:background="#33333333"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/title_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="用户性别："
+            android:textColor="#bb333333"/>
+
+        <RadioGroup
+            android:id="@+id/case_sex_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/title_sex"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/case_sex_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:checked="true"
+                android:text="Man"
+                />
+
+            <RadioButton
+                android:id="@+id/case_sex_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:checked="false"
+                android:text="Woman"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/title_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="用户电话："
+            android:textColor="#bb333333"/>
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/title_phone"
+            android:singleLine="true"
+            android:background="@null"
+            android:maxLength="11"
+            android:inputType="numberDecimal"
+            android:textColor="#ee333333"
+            android:textCursorDrawable="@drawable/edittext_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/edit_phone"
+            android:layout_alignRight="@id/edit_phone"
+            android:layout_below="@id/edit_phone"
+            android:background="#33333333"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/title_password"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="用户密码："
+            android:textColor="#bb333333"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/title_password"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="#ee333333"
+            android:textCursorDrawable="@drawable/edittext_bg"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/edit_password"
+            android:layout_alignRight="@id/edit_password"
+            android:layout_below="@id/edit_password"
+            android:background="#33333333"/>
+    </RelativeLayout>
+</LinearLayout>
